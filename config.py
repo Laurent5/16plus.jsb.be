@@ -11,11 +11,12 @@ import os.path
 import platform
 if platform.node() == 'lithium':
     hostname = 'localhost:1616'
-    DATA_PATH = os.path.expanduser('~') + '/Desktop/16plus.jsb.be/data'
+    DATA_PATH = os.path.expanduser('~') + '/Desktop/16plus.jsb.be-stable/data'
+    repository_latest = os.path.expanduser('~') + '/Desktop/16plus.jsb.be-latest'
 else:
     hostname = '16plus.jsb.be'
-    DATA_PATH = os.path.expanduser('~') + '/apps/16plus.jsb.be/data'
-
+    DATA_PATH = os.path.expanduser('~') + '/apps/16plus.jsb.be-stable/data'
+    repository_latest = os.path.expanduser('~') + '/app/16plus.jsb.be-latest'
     
 REGISTRATIONS_PATH = DATA_PATH + '/registrations'
 JSON_PATH = DATA_PATH + '/json'

@@ -26,7 +26,7 @@
     good practices.
 '''
 
-import os.path
+import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
  
 import cherrypy
@@ -109,6 +109,19 @@ class Root(object):
         else:
             raise cherrypy.HTTPError(401, u'Vous devez vous connecter')
             
+    
+    @cherrypy.expose
+    def update(self):
+        ''' Pulls and checkouts the 'latest' repository. Used to update static files. '''
+        here = os.getcwd()
+        os.chdir(config.repository_latest)
+        yield u'Telechargement...\n'
+        os.system('git pull')
+        yield u'Mise en place...\n'
+        os.system('git checkout .')
+        os.chdir(here)
+        yield u'Nouvelle version active.\n'
+    
 
     @cherrypy.expose
     def static(self, filename):
