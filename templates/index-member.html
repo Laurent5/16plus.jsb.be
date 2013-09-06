@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <!-- Making sure users of Internet Explorer can't use Compatibility Mode, as this will break Persona. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="stylesheet" href="/static/persona-buttons.css" />
+
+        <link rel="stylesheet" href="/static/16plus.css" />
+
+        <meta charset="utf-8">  
+        <title>Activités JSB 16+</title>
+    </head>
+
+    <body>
+        <header>
+            <img src='/static/16+logo.png' alt='logo' class='logo'/>
+            <a href='/profil' class='persona-button blue'><span >Mon profil</span></a>
+            <a href="#" id="signout" class="persona-button orange"><span>Se déconnecter</span></a>
+            <div id="identifier">IDENTIFIER</div>
+            <h1>Activités 16+</h1>
+        </header>
+
+        <div class='sections'>
+            <section>
+                <h2>Que sont les 16+ ?</h2>
+                <div class='description'>
+                    <p>
+                        Les activités 16+ des <a href='http://www.jsb.be'>Jeunesses Scientifiques de Belgique</a>
+                        sont destinées aux jeunes à partir de 16 ans et intéressés par les sciences et les technologies.
+                    </p>
+                    <p>
+                        Pour toute question, contactez-nous :
+<pre>
+Jeunesses Scientifiques Bruxelles
+Avenue Latérale 17 à 1180 Bruxelles
+Tel : 02 537 03 25
+Fax : 02 537 08 02
+Email : info@jsb.be
+</pre>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Weekend de Septembre (27-29)</h2>
+                <div class='description'>
+                    <p>
+                        Les informations sur ce weekend doivent encore parvenir à l'équipe. En attendant, voici une petite lecture sur le magnifique animal que sont les squilles.
+                    </p>
+                    <p>
+                        Les squilles sont des crustacés membres de l'ordre des Stomatopoda, le seul actuellement représenté parmi les Hoplocarides. Il comprend 17 familles environ dont la famille des Squillidae (Linnaeus) et celles des Lysiosquillidae (Giesbrecht, 1910) et regroupe plus de 400 espèces reconnues à ce jour. Leur taille est comprise entre 3 et 18 cm.
+                    </p>
+                    <p>
+                        Elles possèdent des pattes ravisseuses typiques comparables à celles de la mante religieuse d'où leur nom anglophone de crevette-mante bien qu'elles ne soient ni des crevettes, ni des mantes. Celles-ci, d'une très grande force et rapidité, peuvent être massives, lestées de calcaire, et briser coquilles et carapaces ou plus minces et garnies d'éperons pour empaler des proies. Pour certaines espèces, il a été calculé que ces pattes se projetaient sur leur proie en 2 millièmes de seconde.
+                    </p>
+                </div>
+                <div class='register'>
+                    Pour participer à cette activité, il faut s'inscrire avant le 26 septembre.
+                    <form action='/inscription' method='POST'>
+                        <input type='hidden' name='event' value='septembre2003' />
+                        <input type='submit' value="S'inscrire !" />
+                    </form>
+                    <i>En cas d'annulation, veuillez prendre contact par email ou téléphone</i>
+                </div>
+            </section>
+        </div>
+
+        <script src="https://login.persona.org/include.js"></script>
+        <script src="/static/leave.js"></script>
+    </body>
+</html>

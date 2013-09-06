@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(/static/Ubuntu-Font.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(/static/Ubuntu-Font-Bold.woff) format('woff');
+}
+
+body {
+    background-color: #7BAF04;
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2em;
+
+    font-family: Ubuntu, sans-serif;
+}
+
+/* Header */
+
+h1 {
+    color: #0B3979;
+}
+
+img.logo {
+    height: 150px;
+    float: right;
+}
+
+.menu_link {
+    color: white;
+    background-color: #0088FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.2em;
+    white-space: nowrap;
+}
+
+.menu_link a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    background-color: #0077EE;
+}
+
+/* Content */
+
+section {
+    background-color: #FFFFFF;
+    margin-bottom: 1em;
+    padding: 2em;
+    padding-top: 1em;
+
+    box-shadow: 3px 3px 10px #000;
+}
+
+input[type="submit"]{
+    margin-top: 0.3em;
+    font-size: 24px;
+    color: blue;
+}
